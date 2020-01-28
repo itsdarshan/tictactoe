@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SUN CHOKDI</title>
+        <style type="text/css">
+            div
+            {
+            height: 100px;
+            width:  100px;
+            position: absolute;
+            }
+            h1
+            {
+            font-family: cursive;
+            color: white;
+            }
+            #x
+            {
+            background-color: red; 
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px 2px;
+            cursor: pointer;
+            position: absolute;
+            right: 500px;
+            bottom: 100px;
+            }
+            table
+            {
+            border-width: 0px;
+            border-color: orange;
+            border-spacing: 0px;
+            }
+            body
+            {
+            background-color:black;
+            }
+        </style>
+        <script type="text/javascript">
+
+            var y=0;
+            var x=0;
+
+            function f(variable) {
+            
+            y++;
+            	
+            
+            if (document.getElementById('a1').checked == true ) 
+            
+            {	
+            	document.getElementById(variable).style.backgroundColor="blue";
+            	document.getElementById('a2').checked = true;
+            	
+            }
+            
+            else if(document.getElementById('a2').checked == true)
+            
+            {
+            	document.getElementById(variable).style.backgroundColor="green";
+            	document.getElementById('a1').checked = true;
+            	
+            }	
+            
+            else
+            
+            {
+            	alert('Please select one color');
+            }	
+            f2();
+            }		
+            function f2()
+            {
+            if(
+            (document.getElementById('t1').style.backgroundColor == "blue" &&
+             document.getElementById('t2').style.backgroundColor == "blue" && 
+             document.getElementById('t3').style.backgroundColor == "blue")
+            	||
+            (document.getElementById('t1').style.backgroundColor == "green" &&
+             document.getElementById('t2').style.backgroundColor == "green" && 
+             document.getElementById('t3').style.backgroundColor == "green")
+            	||
+            (document.getElementById('t1').style.backgroundColor == "blue" &&
+             document.getElementById('t4').style.backgroundColor == "blue" && 
+             document.getElementById('t7').style.backgroundColor == "blue")
+            	||
+            (document.getElementById('t1').style.backgroundColor == "green" &&
+             document.getElementById('t4').style.backgroundColor == "green" && 
+             document.getElementById('t7').style.backgroundColor == "green")
+            	||
+            (document.getElementById('t1').style.backgroundColor == "blue" &&
+             document.getElementById('t5').style.backgroundColor == "blue" && 
+             document.getElementById('t9').style.backgroundColor == "blue") 
+            	||
+            (document.getElementById('t1').style.backgroundColor == "green" &&
+             document.getElementById('t5').style.backgroundColor == "green" && 
+             document.getElementById('t9').style.backgroundColor == "green") 
+            	|| 
+            (document.getElementById('t2').style.backgroundColor == "blue" &&
+             document.getElementById('t5').style.backgroundColor == "blue" && 
+             document.getElementById('t8').style.backgroundColor == "blue") 
+             	||
+            (document.getElementById('t2').style.backgroundColor == "green" &&
+             document.getElementById('t5').style.backgroundColor == "green" && 
+             document.getElementById('t8').style.backgroundColor == "green") 
+             	||
+            (document.getElementById('t3').style.backgroundColor == "blue" &&
+             document.getElementById('t5').style.backgroundColor == "blue" && 
+             document.getElementById('t7').style.backgroundColor == "blue") 
+            	||
+            (document.getElementById('t3').style.backgroundColor == "green" &&
+             document.getElementById('t5').style.backgroundColor == "green" && 
+             document.getElementById('t7').style.backgroundColor == "green") 
+            	||	
+            (document.getElementById('t4').style.backgroundColor == "blue" &&
+             document.getElementById('t5').style.backgroundColor == "blue" && 
+             document.getElementById('t6').style.backgroundColor == "blue") 
+            	||
+            (document.getElementById('t4').style.backgroundColor == "green" &&
+             document.getElementById('t5').style.backgroundColor == "green" && 
+             document.getElementById('t6').style.backgroundColor == "green") 
+            	||
+            (document.getElementById('t7').style.backgroundColor == "blue" &&
+             document.getElementById('t8').style.backgroundColor == "blue" && 
+             document.getElementById('t9').style.backgroundColor == "blue") 
+            	||
+            (document.getElementById('t7').style.backgroundColor == "green" &&
+             document.getElementById('t8').style.backgroundColor == "green" && 
+             document.getElementById('t9').style.backgroundColor == "green") 
+            	||
+            (document.getElementById('t3').style.backgroundColor == "blue" &&
+             document.getElementById('t6').style.backgroundColor == "blue" && 
+             document.getElementById('t9').style.backgroundColor == "blue")
+                ||
+            (document.getElementById('t3').style.backgroundColor == "green" &&
+             document.getElementById('t6').style.backgroundColor == "green" && 
+             document.getElementById('t9').style.backgroundColor == "green")
+                 
+            ) 	
+            {
+             if(
+             	(document.getElementById('t1').style.backgroundColor == "blue" &&
+             document.getElementById('t2').style.backgroundColor == "blue" && 
+             document.getElementById('t3').style.backgroundColor == "blue")
+            	||
+            (document.getElementById('t1').style.backgroundColor == "blue" &&
+             document.getElementById('t4').style.backgroundColor == "blue" && 
+             document.getElementById('t7').style.backgroundColor == "blue")
+            	||
+            (document.getElementById('t1').style.backgroundColor == "blue" &&
+             document.getElementById('t5').style.backgroundColor == "blue" && 
+             document.getElementById('t9').style.backgroundColor == "blue") 
+            	||
+            (document.getElementById('t2').style.backgroundColor == "blue" &&
+             document.getElementById('t5').style.backgroundColor == "blue" && 
+             document.getElementById('t8').style.backgroundColor == "blue") 
+             	||
+            (document.getElementById('t3').style.backgroundColor == "blue" &&
+             document.getElementById('t5').style.backgroundColor == "blue" && 
+             document.getElementById('t7').style.backgroundColor == "blue") 
+            	||
+            (document.getElementById('t4').style.backgroundColor == "blue" &&
+             document.getElementById('t5').style.backgroundColor == "blue" && 
+             document.getElementById('t6').style.backgroundColor == "blue") 
+            	||
+            (document.getElementById('t7').style.backgroundColor == "blue" &&
+             document.getElementById('t8').style.backgroundColor == "blue" && 
+             document.getElementById('t9').style.backgroundColor == "blue") 
+            	||
+            (document.getElementById('t3').style.backgroundColor == "blue" &&
+             document.getElementById('t6').style.backgroundColor == "blue" && 
+             document.getElementById('t9').style.backgroundColor == "blue")
+            )
+            		{
+                        x=5;
+            			alert('BLUE WON');
+            			setTimeout(function(){location.reload();}, 800);
+            		}
+            		else
+            		{
+                        x=5;
+            			alert('GREEN WON');	
+            			setTimeout(function(){location.reload();}, 800);
+            		}
+            }
+            if (y==9 && x!=5) {
+                alert('DRAW');
+                setTimeout(function(){location.reload();}, 800);
+
+            }
+            }
+            
+            function reset()
+            {
+            location.reload();
+            }
+        </script>
+    </head>
+    <body  >
+        <h1 align="center">TIC TAC TOE </h1>
+        <table height=400px width=400px border="1px" align=center >
+            <tr>
+                <td id="t1" onclick="f('t1')"></td>
+                <td id="t2" onclick="f('t2')"></td>
+                <td id="t3" onclick="f('t3')"></td>
+            </tr>
+            <tr>
+                <td id="t4" onclick="f('t4')"></td>
+                <td id="t5" onclick="f('t5')"></td>
+                <td id="t6" onclick="f('t6')"></td>
+            </tr>
+            <tr>
+                <td id="t7" onclick="f('t7')"></td>
+                <td id="t8" onclick="f('t8')"></td>
+                <td id="t9" onclick="f('t9')"></td>
+            </tr>
+        </table>
+        <div style="left: 515px;">
+            <br>
+            <p style="color: white;">BLUE</p>
+            <input id="a1" type="radio"  name="cross" value="blue">
+        </div>
+        <div style="left: 599px;">
+            <br>
+            <p style="color: white;">GREEN</p>
+            <input id="a2" type="radio"  name="cross" value="green">
+        </div>
+        <br><br><br><br><br>
+        <input type="reset" id="x" onclick="reset()" value="DRAW or RESET">
+        <br>
+        <h3 style="color: white;" align="center"> By Darshan Shah </h3>
+    </body>
+</html>
